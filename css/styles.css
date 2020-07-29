@@ -1,9 +1,15 @@
 body {
     font-family: "Open Sans", sans-serif;
+    background-color: black;
 }
 
 h1, h2, h3 {
     font-family: "Lobster", cursive;
+    color: gold;
+}
+
+li{
+    color: gold;
 }
 
 .jumbotron {
@@ -13,8 +19,22 @@ h1, h2, h3 {
     color: gold;
 }
 
-
-
 .navbar {
     background-image: linear-gradient(to left bottom, #444444, #333333, #000000);
+}
+
+.row-content{
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.site-footer {
+    background-image: linear-gradient(to left bottom, #444444, #333333, #000000);
+    color: gold;
+    padding: 20px 0;
+}
+
+p {
+    color: gold;
 }
