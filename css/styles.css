@@ -16,5 +16,5 @@ h1, h2, h3 {
 
 
 .navbar {
-    background-color: #901CAD; /*We will see about this*/
+    background-image: linear-gradient(to left bottom, #444444, #333333, #000000);
 }
