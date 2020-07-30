@@ -33,6 +33,14 @@ li{
     padding: 0px;
 }
 
+#Phone-ref {
+    padding: 0px;
+}
+
+#Email-ref {
+    padding: 0px;
+}
+
 .site-footer {
     background-image: linear-gradient(to left bottom, #444444, #333333, #000000);
     color: gold;
