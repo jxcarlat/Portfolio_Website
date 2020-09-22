@@ -4,9 +4,14 @@
   "description": "Portfolio Website",
   "main": "index.html",
   "scripts": {
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "clean": "rimraf dist",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
     "start": "npm run lite",
     "lite": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "usemin": "usemin contactme.html -d dist --htmlmin -o dist/contactme.html && usemin aboutme.html -d dist --htmlmin -o dist/aboutme.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin websites.html -d dist --htmlmin -o dist/websites.html"
   },
   "repository": {
     "type": "git",
@@ -19,7 +24,11 @@
   },
   "homepage": "https://github.com/jxcarlat/Portfolio-Website#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
+    "lite-server": "^2.5.4",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
